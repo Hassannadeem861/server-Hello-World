@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            
+            "Name": "Hasssan",
+            "Father-Name": "Nadeem",
+            "Age": "20",
+            "isActive": "true"
+        };
+
+        let obj_str = JSON.stringify(obj);
+        // console.log(obj_str);
+
+        localStorage.setItem("obj",obj_str);
+
+        let convert_obj = localStorage.getItem("obj");
+        console.log (typeof "convert_obj :", convert_obj)
+
+        JSON.parse()
+    </script>
+</body>
+</html>
